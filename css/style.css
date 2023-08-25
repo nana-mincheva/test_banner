@@ -224,9 +224,10 @@
 
 .banner-slide__first_article,
 .banner-slide__second_article {
+    z-index: 4;
     text-align: center;
     position: absolute;
-    bottom: 110px;
+    bottom: 120px;
     margin-left: 120px;
     left: 1%;
     animation: slideAndFadeArticle 2s infinite;
@@ -234,6 +235,7 @@
 
     @media screen and (min-width: 768px) {
         margin-left: 300px;
+        bottom: 110px;
     }
 }
 
