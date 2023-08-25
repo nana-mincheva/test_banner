@@ -16,10 +16,8 @@ function startAnimation() {
             setTimeout(runAnimation, delayBetweenIterations);
         }
     }
-
     runAnimation();
 }
-
 startAnimation();
 
 
