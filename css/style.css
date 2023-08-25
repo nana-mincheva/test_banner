@@ -357,3 +357,20 @@
         transform: scale(1.2);
     }
 }
+
+.close-button {
+    background-color: #fff;
+    color: #283693;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+}
+
+.closed {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+    opacity: 0;
+}

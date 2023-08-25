@@ -1,6 +1,8 @@
 const element = document.querySelector('.banner-button');
-const totalIterations = Infinity; // Общее количество циклов анимации
-const delayBetweenIterations = 3000; // Задержка между циклами анимации в миллисекундах
+const totalIterations = Infinity;
+const delayBetweenIterations = 3000;
+const adhesionBanner = document.querySelector('.adhesion-banner');
+const closeButton = document.querySelector('.close-button');
 
 function startAnimation() {
     let iterationCount = 0;
@@ -19,3 +21,8 @@ function startAnimation() {
 }
 
 startAnimation();
+
+
+closeButton.addEventListener('click', () => {
+    adhesionBanner.classList.add('closed');
+});
