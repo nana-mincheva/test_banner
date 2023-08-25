@@ -1,8 +1,8 @@
 const element = document.querySelector('.banner-button');
 const totalIterations = Infinity;
 const delayBetweenIterations = 3000;
-const adhesionBanner = document.querySelector('.adhesion-banner');
-const closeButton = document.querySelector('.close-button');
+const containerBanner = document.querySelector('.banner-container');
+const closeButton = document.querySelector('.banner-close__button');
 
 function startAnimation() {
     let iterationCount = 0;
@@ -22,5 +22,5 @@ startAnimation();
 
 
 closeButton.addEventListener('click', () => {
-    adhesionBanner.classList.add('closed');
+    containerBanner.classList.add('closed');
 });
